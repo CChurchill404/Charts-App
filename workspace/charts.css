@@ -1,0 +1,151 @@
+body {
+	color: #444;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-weight: 100;
+  margin: 0px;
+}
+
+.contentWrap {
+  margin-top: 20px;
+  margin-bottom: 20px;
+	width: 80%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.chartWrap {
+	background: #009CEF;
+	padding: 0;
+	overflow: hidden;
+}
+
+.chartTable {
+	background: none;
+	height: 400px;
+	width: 100%;
+	font-weight: lighter;	
+	border-collapse: collapse;  
+}
+
+.chartTableHeader {
+	background: none;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: lighter;
+	color: #FFF;
+}
+
+.chartTableBars {
+	background: rgba(255,255,255,0.2);
+	height: 420px;
+	font-size: 15px;  
+	vertical-align: bottom;
+  font-weight: lighter;
+	padding: 0px;
+}
+ 
+.chartTableLeftBar {
+	background: rgba(255,255,255,0.2);
+	padding: 0px;
+	text-align: right;
+	width: 50px;
+	color: #FFF;
+}
+
+.chartTableHiddenCell {
+	max-height: 0px;
+	padding: 0px;
+	background: #DDD;
+}
+
+.chartTableBottomBar {
+	background: rgba(255,255,255,0.2);
+  text-align: center;
+   font-size: 28px;
+	font-weight: lighter;
+	color: #FFF;
+}
+
+.chartTableBottomTimeUnits {
+	background: rgba(255,255,255,0.2);
+	padding: 12px 0px 7px 0px;
+	text-align: center;
+	border-left: 0px solid #DDD;
+	font-weight: lighter;	
+  font-size: 16px;
+	color: #FFF;
+}
+
+.chartPingBar {
+	position: relative;
+	bottom: 0px;
+	margin-bottom: 20px;
+	margin-top: 00px;
+}
+
+.chartGreen {
+	background: RGBA(10,00,00,0.14);
+}
+
+.chartGreen p {
+	padding: 10px 0px 0px 0px ;
+	color: #FFF;
+  position: relative;
+  top: -30px;
+}
+
+.chartGreen::after {
+	content: 'High';
+	position: absolute;
+	bottom: -20px;
+	left: 0px; bottom: -25px;
+	background: RGBA(10,00,00,0.5);
+	width: 100%;
+	padding: 3px 0px 3px 0px;
+	z-index: 100;
+	color: #FFF;
+}
+
+.chartRed {
+	background: rgba(200,20,20,0.2);
+}
+
+.chartRed p { 
+	padding: 5px 0px 0px 0px ;
+	color: #FFF;
+  position: relative;
+  top: -28px;
+}
+
+.chartRed::after {
+	content: 'High';
+	position: absolute;
+	bottom: -20x;
+	left: 0px; bottom: -25px;
+	background: rgba(200,20,20,0.4);
+	width: 100%;
+	padding: 3px 0px 3px 0px;
+	z-index: 100;
+	color: #FFF;
+}
+
+.chartOff {
+	background: none;
+}
+
+.chartOff p {
+	padding: 6px 7px 0px 7px ;
+	background: none;
+}
+
+.chartOff::after {
+	content: 'Low';
+	position: absolute;
+	left: 0px; bottom: -25px;
+	background: rgba(200,20,20,0.4);
+	width: 100%;
+	padding: 3px 0px 3px 0px;
+	z-index: 100;
+	color: #FFF;
+}
